@@ -62,7 +62,7 @@
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link">Inicio</a>
                     <div class="nav-item dropdown">
-                        <a href="Reservas.html" class="nav-item nav-link">Reservas</a>
+                        <a href="chart.html" class="nav-item nav-link">Reservas</a>
                         <a href="Habitaciones.html" class="nav-item nav-link">Habitaciones</a>
                         <a href="widget.html" class="nav-item nav-link">Tipo de habitaciones</a>
                         <a href="Servicio.html" class="nav-item nav-link">Servicios</a>
@@ -70,7 +70,7 @@
                         <a href="metodopagos.html" class="nav-item nav-link">Métodos de pago</a>
                         <a href="chart.html" class="nav-item nav-link">Tipo de métodos de pago</a>
                         <a href="clientes.html" class="nav-item nav-link">Clientes</a>
-                        <a href="Telefonos.html" class="nav-item nav-link">Teléfono de clientes</a>
+                        <a href="chart.html" class="nav-item nav-link">Teléfono de clientes</a>
                         <a href="chart.html" class="nav-item nav-link">Control de usuario</a>
                         <a href="chart.html" class="nav-item nav-link">Cerrar sesión</a>               
                     </div>
@@ -80,35 +80,81 @@
     </div>
     <!-- Sidebar End -->
 
-    <!-- Content Start -->
+
+        <!-- Content Start -->
+
         <div class="content">
                 
             <div class="row vh-90 bg-light rounded align-items-center justify-content-center mx-0">
                 <div class="col-md-30 text-center cuadrado" align="middle" span style="border-image: initial; border: 2px solid black;">       
-                    <h3>Bienvenido al Sistema de Gestión del Hotel UTP
+                    <h3>Módulo de Métodos de Pago: Hotel UTP
                         <div class="left">
                             <button type="button" class="btn btn-primary m-2">Cerrar sesión</button>
                         </div>
                     </h3>
                 </div>
             </div>
-            <!-- Navbar End -->
+
 
             <!-- Blank Start -->
             <div class="container-fluid pt-0 px-0">                        
                 <div class="bg-light rounded h-50 p-2">
-                        <div class="bg-light rounded h-100 p-4">                        
-                                <a href="Reservas.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/reservas1.jpg" width="295px"></button></a>
-                                <a href="Habitaciones.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/habitaciones.jpg" width="295px"></button></a>
-                                <a href="Servicio.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/servicios.jpg" width="295px"></button></a>
-                                <a href="metodopagos.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/metodopago.jpg" width="295px"></button></a>
-                                <a href="clientes.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/clientes.jpg" width="295px"></button></a>
-                                <a href="Telefonos.html" button type="button" class="btn btn-outline-primary m-2"><img src="images/inicio/telefono.jpg" width="295px"></button></a>                                
+                    <div class="left">
+                        <button type="button" class="btn btn-outline-primary m-2"><i class="fa fa-home me-2"></i>Inicio</button>
+                    </div>
+                        <div class="bg-light rounded h-100 p-4">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Código de Método de Pago</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Estado Método de Pago</th>
+                                        <th scope="col">Tipo Método de Pago</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">MTP-001</th>
+                                        <td>VISA</td>
+                                        <td>Activo</td>
+                                        <td>TARJETA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MTP-002</th>
+                                        <td>YAPE</td>
+                                        <td>Inactivo</td>
+                                        <td>APLICATIVO</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MTP-003</th>
+                                        <td>MASTERCARD</td>
+                                        <td>Activo</td>
+                                        <td>TARJETA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MTP-004</th>
+                                        <td>INTERBANK</td>
+                                        <td>Activo</td>
+                                        <td>TARJETA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <center>
+                                <button type="button" class="btn btn-primary m-2"><i class="fa fa-plus me-2"></i>Nuevo método</button>
+                                <button type="button" class="btn btn-primary m-2"><i class="fas fa-pencil-alt me-2"></i>Editar datos</button>
+                                <button type="button" class="btn btn-primary m-2"><i class="fa fa-trash me-2"></i>Eliminar</button>
+                                <button type="button" class="btn btn-primary m-2"><i class="fa fa-undo me-2"></i>Actualizar</button>
+                                <button type="button" class="btn btn-primary m-2"><i class="fa fa-check-square me-2"></i>Habilitar</button>
+                                <button type="button" class="btn btn-primary m-2"><i class="fa fa-window-close me-2"></i>Desactivar</button>
+                            </center>
                         </div>
                 </div>
             </div>
         </div>
-        <!-- Table End -->
+
+            <!-- Blank End -->
+            
+        <!-- Content End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
